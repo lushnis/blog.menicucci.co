@@ -480,6 +480,15 @@ div.post {
 div.post:first-of-type {
   padding-top: 0;
 }
+div.post:firstcharacter { 
+    float: left; 
+    color: #FFF000; 
+    font-size: 75px; 
+    line-height: 60px; 
+    padding-top: 4px; 
+    padding-right: 8px; 
+    padding-left: 3px; 
+    font-family: Georgia;}
 div.post.whole {
   border-bottom: 0;
   padding-bottom: 60px;
