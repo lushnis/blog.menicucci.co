@@ -144,15 +144,6 @@
                     <section class="content">
                         <h1>{{ post.title }}</h1>
                         {{ post.content }}
-                        post.content:firstcharacter { 
-    						float: left; 
-    						color: #FFF000; 
-    						font-size: 75px; 
-    						line-height: 60px; 
-    						padding-top: 4px; 
-    						padding-right: 8px; 
-    						padding-left: 3px; 
-    						font-family: Georgia;}
                         <div class="footer" class="muted">
                             <p class="publisher muted">Published by {{ site.author }} on <time class="time" datetime="{{ post.created_at }}">{{ post.created_at|date_format }}</time></p>
                             {% if post.tags %}
