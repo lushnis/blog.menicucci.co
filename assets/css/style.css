@@ -1,7 +1,9 @@
 *{margin:0;padding:0}
 body{color:#222;background-color:#fff;font:14px/1.6 sans-serif}
 a:link{color:#333;text-decoration:none}
+a:visited{color:#444}
+a:hover{color:#2d72d9}
 .site-header{height:400px;background:#999;text-align:center}.site-header img{width:65px;height:65px}
 .container{margin:0 auto;width:800px}
 .title{text-align:center}
-.posts-list li{list-style:none;font-size:18px}.posts-list li time{display:inline-block;width:6em;color:#999}
+.posts-list li{list-style:none;font-size:18px;line-height:2}.posts-list li time{display:inline-block;padding-right:.5em;width:6em;color:#999;text-align:right}
