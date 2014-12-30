@@ -13,3 +13,5 @@ a:hover{color:#000}
 .post h1{padding:1em 0;font-size:28px}
 .post .body{font-size:18px}
 .post .footer{padding-top:1em;font-family:"Roboto Slab",serif;font-weight:400;color:#84cad9}
+.post .post-tags li{display:inline;list-style:none}
+.post .post-tags a{padding:2px 4px;border-radius:2px;background:#eee}
