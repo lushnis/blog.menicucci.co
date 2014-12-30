@@ -1,6 +1,6 @@
 @import "http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300";
 *{margin:0;padding:0}
-body{color:#4c4c4c;background-color:#fff;font:14px/1.6 sans-serif}
+body{color:#4c4c4c;background-color:#fff;font:14px/1.6 "Hiragino Sans GB","Helvetica Neue",sans-serif}
 a:link{color:#4c4c4c;text-decoration:none}
 a:visited{color:#7a7a7a}
 a:hover{color:#000}
