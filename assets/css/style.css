@@ -7,5 +7,5 @@ a:hover{color:#2d72d9}
 .site-header{padding:4em 0;text-align:center}.site-header img{width:65px;height:65px}
 .site-header .bio{color:#999}
 .container{margin:0 auto;width:800px}
-.title{font-family:"Roboto Slab",serif;font-weight:700}
-.posts-list li{list-style:none;font-size:18px;line-height:2}.posts-list li time{display:inline-block;padding-right:.5em;width:6em;color:#999;text-align:right}
+.title{padding-left:60px;font-size:16px;font-family:"Roboto Slab",serif;font-weight:700}
+.posts-list li{list-style:none;font-size:18px;line-height:2}.posts-list li time{display:inline-block;box-sizing:border-box;padding-right:.5em;width:60px;color:#999;text-align:right;font-family:"Roboto Slab",serif;font-weight:300}
