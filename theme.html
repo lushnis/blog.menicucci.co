@@ -103,8 +103,7 @@
                     {% if loop.index > 0 and loop.index <= 20 %}
                     <li>
                         <article itemscope itemtype="http://schema.org/Article">
-                            <time datetime="{{ post.created_at }}">{{ post.created_at.strftime('%d %b') }}</time>
-                            <a href="{{ post.permalink }}" class="TSSunOld permalink">{{ post.title }}</a>
+                            <time datetime="{{ post.created_at }}">{{ post.created_at.strftime('%d %b') }}</time><a href="{{ post.permalink }}" class="TSSunOld permalink">{{ post.title }}</a>
                         </article>
                     </li>
                     {% endif %}
