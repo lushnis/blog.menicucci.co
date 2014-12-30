@@ -12,6 +12,6 @@ a:hover{color:#000}
 .posts-list li{list-style:none;font-size:18px;line-height:2}.posts-list li time{display:inline-block;box-sizing:border-box;padding-right:.5em;width:100px;color:#84cad9;text-align:right;font-family:"Roboto Slab",serif;font-weight:300}
 .post h1{padding:1em 0;font-size:28px}
 .post .body{font-size:18px}
-.post .footer{padding-top:1em;font-family:"Roboto Slab",serif;font-weight:400;color:#84cad9}
+.post .footer{margin-top:1em;padding:1em .8em;background:#f2f2f2;font-family:"Roboto Slab",serif;font-weight:400;color:#84cad9}
 .post .post-tags li{display:inline;list-style:none}
-.post .post-tags a{padding:2px 4px;border-radius:2px;background:#eee}
+.post .post-tags a{padding:2px 12px;border-radius:10px;border:1px solid #eee}

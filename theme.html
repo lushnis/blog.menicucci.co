@@ -125,7 +125,7 @@
                             {% if post.tags %}
                             <ul class="post-tags">
                                 {% for tag in post.tags %}
-                                <li><a href="/tag/{{ tag }}"><i class="icon-tags"></i> {{ tag|format_tag(humanize=True) }}</a></li>
+                                <li>{{ tag|format_tag(humanize=True) }}</li>
                                 {% endfor %}
                             </ul>
                             {% endif %}
