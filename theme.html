@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <title>{% if is_home %}{{ site.author }} {% elif is_post %} {{ post.title }} {% elif is_link %} {{ link.title }} {% elif is_tag %} {{ tag }} {% elif is_page %} {{ page.title }} {% endif %} | {{ site.name }}</title>
@@ -85,20 +85,6 @@
             <div class="header-name">
                 <h1><a href="/">{{ site.author }}</a></h1>
                 <p class="bio muted">{{ site.bio }} </p>
-            </div>
-            <div class="header-nav">
-                <nav role="navigation">
-                    <ul class="nav nav-pills nav-home hidden-phone">
-                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
-                    </ul>
-                    <ul class="nav nav-pills nav-pages pull-right">
-                        {% if pages %}
-                        {% for page in pages %}
-                        <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
-                        {% endfor %}
-                        {% endif %}
-                    </ul>
-                </nav>
             </div>
         </header>
  
