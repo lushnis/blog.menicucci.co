@@ -119,7 +119,7 @@
                 <article itemscope itemtype="http://schema.org/Article" class="post">
                     <section class="content">
                         <h1>{{ post.title }}</h1>
-                        {{ post.content }}
+                        <div class="TSSunOld body">{{ post.content }}</div>
                         <div class="footer" class="muted">
                             <p class="publisher muted">Published by {{ site.author }} on <time class="time" datetime="{{ post.created_at }}">{{ post.created_at|date_format }}</time></p>
                             {% if post.tags %}
