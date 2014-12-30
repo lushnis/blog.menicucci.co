@@ -1,9 +1,11 @@
+@import "http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300";
 *{margin:0;padding:0}
 body{color:#222;background-color:#fff;font:14px/1.6 sans-serif}
 a:link{color:#333;text-decoration:none}
 a:visited{color:#444}
 a:hover{color:#2d72d9}
-.site-header{height:400px;background:#999;text-align:center}.site-header img{width:65px;height:65px}
+.site-header{padding:4em 0;text-align:center}.site-header img{width:65px;height:65px}
+.site-header .bio{color:#999}
 .container{margin:0 auto;width:800px}
-.title{text-align:center}
+.title{font-family:"Roboto Slab",serif;font-weight:700}
 .posts-list li{list-style:none;font-size:18px;line-height:2}.posts-list li time{display:inline-block;padding-right:.5em;width:6em;color:#999;text-align:right}
