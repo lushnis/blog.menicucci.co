@@ -53,9 +53,16 @@ a:link { color: #4C4C4C; text-decoration: none; }
 }
 
 @media only screen and (max-device-width: 480px) {
-	.container { width: 100%; }
+	.container { padding: 0 1em; width: 100%; box-sizing: border-box; }
+	.posts-list {
+		padding: 0 1em; width: 100%; box-sizing: border-box;
+		li {
+			list-style: none; font-size: 16px; line-height: 2;
+			time { display: block; color: #84CAD9; text-align: left; font-family: "Roboto Slab", serif; font-weight: 300; font-size: 14px; }
+		}
+	}
 	.post {
-		h1 { font-size: 16px; }
-		.body { font-size: 14px; }
+		h1 { font-size: 20px; }
+		.body { font-size: 16px; }
 	}
 }
