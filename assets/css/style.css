@@ -1,3 +1,5 @@
 *{margin:0;padding:0}
 body{color:#222;background-color:#fff;font:14px/1.6 sans-serif}
-header{height:400px;background:#999;text-align:center}header img{width:65px;height:65px}
+.site-header{height:400px;background:#999;text-align:center}.site-header img{width:65px;height:65px}
+.container{margin:0 auto;width:800px}
+.title{text-align:center}

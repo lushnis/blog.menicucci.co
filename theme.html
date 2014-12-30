@@ -74,20 +74,20 @@
     {% endif %}
 </head>
 <body>
-    <div class="container">
+    <div class="wrapper">
  
         <header class="site-header">
             <a href="/"><img src="{{ assets('images/logo.png') }}" alt="{{ site.mame }}" /></a>
-            <p class="bio muted">{{ site.bio }} </p>
+            <p class="bio">{{ site.bio }} </p>
         </header>
  
-        <div class="website-content" role="main">
+        <div class="container">
             <div class="content">
             {% if is_home or is_tag %}
  
                 {% if is_tag %}
                 <header>
-                    <h2 class="title">Showing all posts tagged #{{ tag }}:</h2>
+                    <h2 class="title">#{{ tag }}:</h2>
                 </header>
                 {% endif %}
  
@@ -98,15 +98,13 @@
                     <h2 class="title">{{ year }}</h2>
                 </header>
                 {% endif %}
-                <ul class="posts">
+                <ul class="posts-list">
                     {% for post in items %}
                     {% if loop.index > 0 and loop.index <= 20 %}
                     <li>
                         <article itemscope itemtype="http://schema.org/Article">
-                            <time datetime="{{ post.created_at }}">{{ post.created_at.strftime('%d %b') }}</time> &rsaquo; <a href="{{ post.permalink }}" class="permalink">{{ post.title }}</a>
-                            <div class="post-tags hidden-phone">
-                                {{- post.tags|format_tags(humanize=True) -}}
-                            </div>
+                            <time datetime="{{ post.created_at }}">{{ post.created_at.strftime('%d %b') }}</time>
+                            <a href="{{ post.permalink }}" class="permalink">{{ post.title }}</a>
                         </article>
                     </li>
                     {% endif %}
