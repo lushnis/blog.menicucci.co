@@ -121,7 +121,7 @@
                         <h1 class="JetLinkNewBoldBlack">{{ post.title }}</h1>
                         <div class="body">{{ post.content }}</div>
                         <div class="footer" class="muted">
-                            <time class="time" datetime="{{ post.created_at }}">{{ post.created_at|date_format }}</time>
+                            <p class="publisher">Published on <time class="time" datetime="{{ post.created_at }}">{{ post.created_at|date_format }}</time></p>
                             {% if post.tags %}
                             <ul class="post-tags">
                                 {% for tag in post.tags %}
