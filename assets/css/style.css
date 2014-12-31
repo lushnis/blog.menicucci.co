@@ -13,8 +13,11 @@ a:hover{color:#000}
 .posts-list li{list-style:none;font-size:18px;line-height:2}.posts-list li time{display:inline-block;box-sizing:border-box;padding-right:.5em;width:100px;color:#84cad9;text-align:right;font-family:"Roboto Slab",serif;font-weight:300}
 .post h1{padding:1em 0;font-size:28px}
 .post .body{font-size:18px}.post .body a:link,.post .body a:visited{text-decoration:underline}
+.post .body h4{padding:1em 0}
+.post .body p{padding:1em 0}
+.post .body blockquote{padding:1em}
 .post .footer{margin-top:1em;padding:1em .8em;border-radius:2px;border:1px solid #e5e5e5;font-family:"Roboto Slab",serif;font-weight:400;color:#84cad9}.post .footer .publisher{font-size:12px}
 .post .post-tags{padding-top:.5em}.post .post-tags li{display:inline;list-style:none}
-.post .post-tags a{padding:3px 16px;border-radius:16px;border:1px solid #84cad9}
-.tags{padding:1em 2em;line-height:2;font-family:"Roboto Slab",serif;font-weight:400}.tags a{padding:3px 16px;border-radius:16px;border:1px solid #84cad9}
+.post .post-tags a{padding:3px 16px;border-radius:16px;border:1px solid #84cad9;white-space:nowrap}
+.tags{padding:3em 2em 1em;line-height:2;font-family:"Roboto Slab",serif;font-weight:400}.tags a{padding:3px 16px;border-radius:16px;border:1px solid #84cad9}
 @media only screen and (max-device-width:480px){.container{padding:0 1em;width:100%;box-sizing:border-box} .title{padding:1em 0 .5em 0;border-bottom:1px solid #e9e9e9;font-size:14px;font-family:"Roboto Slab",serif;font-weight:700;color:#6ea1ca} .posts-list li{padding:.4em 0;border-bottom:1px solid #e9e9e9;list-style:none;font-size:16px;line-height:1.4}.posts-list li time{display:block;color:#84cad9;text-align:left;font-family:"Roboto Slab",serif;font-weight:400;font-size:13px} .post h1{font-size:20px} .post .body{font-size:16px}}
