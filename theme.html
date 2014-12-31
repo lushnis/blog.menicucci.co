@@ -115,11 +115,10 @@
                 {% endif %}
 
                 {% if is_tag %}
-                <h2 class="title">Tags:</h2>
                 {% if site.tags %}
                 <div class="tags">
                     {% for tag in site.tags %}
-                    <a href="/tag/{{ tag.name }}">#{{ tag.name }}</a>
+                    <a href="/tag/{{ tag.name }}">{{ tag.name }}</a>
                     {% endfor %}
                 </div>
                 {% endif %}
