@@ -113,6 +113,16 @@
                 {% else %}
                 <h2 class="title"><em>No posts yet :(</em></h2>
                 {% endif %}
+
+                {% if is_tag %}
+                {% if site.tags %}
+                <div class="tags">
+                    {% for tag in site.tags %}
+                    <a href="/tag/{{ tag.name }}">#{{ tag.name }}</a>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% endif %}
  
             {% elif is_post %}
  
