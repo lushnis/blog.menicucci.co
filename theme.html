@@ -110,7 +110,6 @@
 
                 <ul class="posts-list">
                     {% for post in posts %}
-
                     <li>
                         <article itemscope itemtype="http://schema.org/Article">
                             <time datetime="{{ post.created_at }}">{{ post.created_at.strftime('%d %b') }}</time><a href="{{ post.permalink }}" class="permalink">{{ post.title }}</a>
@@ -118,11 +117,6 @@
                     </li>
                     {% endfor %}
                 </ul>
-
-                <div class="pagination">
-            {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %}
-            {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}
-          </div>
 
                 {% if site.tags %}
                 <div class="tags">
