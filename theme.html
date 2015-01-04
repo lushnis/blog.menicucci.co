@@ -86,7 +86,7 @@
             {% if is_home %}
             {% if posts %}
                 {% for year, items in sort_by_year(posts) %}
-                
+
                 <ul class="posts-list">
                     {% for post in items %}
                     {% if loop.index > 0 and loop.index <= 20 %}
@@ -112,19 +112,18 @@
                     <h2 class="title">#{{ tag }}:</h2>
                 </header>
             {% if posts %}
-                {% for year, items in sort_by_year(posts) %}
+
                 <ul class="posts-list">
-                    {% for post in items %}
-                    {% if loop.index > 0 and loop.index <= 40 %}
+                    {% for post in posts %}
+
                     <li>
                         <article itemscope itemtype="http://schema.org/Article">
                             <time datetime="{{ post.created_at }}">{{ post.created_at.strftime('%d %b') }}</time><a href="{{ post.permalink }}" class="permalink">{{ post.title }}</a>
                         </article>
                     </li>
-                    {% endif %}
                     {% endfor %}
                 </ul>
-                {% endfor %}
+
                 {% if site.tags %}
                 <div class="tags">
                     {% for tag in site.tags %}
