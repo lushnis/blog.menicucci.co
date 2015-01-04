@@ -83,21 +83,9 @@
  
         <div class="container">
             <div class="content">
-            {% if is_home or is_tag %}
- 
-                {% if is_tag %}
-                <header>
-                    <h2 class="title">#{{ tag }}:</h2>
-                </header>
-                {% endif %}
- 
-                {% if posts %}
+            {% if is_home %}
+            {% if posts %}
                 {% for year, items in sort_by_year(posts) %}
-                {% if not is_tag %}
-                <header>
-                    <h2 class="title">{{ year }}</h2>
-                </header>
-                {% endif %}
                 <ul class="posts-list">
                     {% for post in items %}
                     {% if loop.index > 0 and loop.index <= 20 %}
@@ -110,19 +98,33 @@
                     {% endfor %}
                 </ul>
                 {% endfor %}
-
-                {% if not is_tag %}
                 <div class="pagination">
                     {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %}
                     {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}
                 </div>
-                {% endif %}
-
-                {% else %}
+            {% else %}
                 <h2 class="title"><em>No posts yet :(</em></h2>
-                {% endif %}
+            {% endif %}
+            {% endif %}
 
-                {% if is_tag %}
+            {% if is_tag %}
+                <header>
+                    <h2 class="title">#{{ tag }}:</h2>
+                </header>
+            {% if posts %}
+                {% for year, items in sort_by_year(posts) %}
+                <ul class="posts-list">
+                    {% for post in items %}
+                    {% if loop.index > 0 and loop.index <= 1000 %}
+                    <li>
+                        <article itemscope itemtype="http://schema.org/Article">
+                            <time datetime="{{ post.created_at }}">{{ post.created_at.strftime('%d %b') }}</time><a href="{{ post.permalink }}" class="permalink">{{ post.title }}</a>
+                        </article>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                {% endfor %}
                 {% if site.tags %}
                 <div class="tags">
                     {% for tag in site.tags %}
@@ -130,8 +132,11 @@
                     {% endfor %}
                 </div>
                 {% endif %}
-                {% endif %}
- 
+            {% else %}
+                <h2 class="title"><em>No posts yet :(</em></h2>
+            {% endif %}
+            {% endif %}
+
             {% elif is_post %}
  
                 <article itemscope itemtype="http://schema.org/Article" class="post">
