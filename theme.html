@@ -87,7 +87,7 @@
             {% if posts %}
                 {% for year, items in sort_by_year(posts) %}
                 <header>
-                    <h2 class="title">{{ year }}</h2>
+                    <h2 class="title"><a href="/tag/y{{ year }}">{{ year }}</a></h2>
                 </header>
                 <ul class="posts-list">
                     {% for post in items %}
