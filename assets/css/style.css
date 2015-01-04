@@ -21,7 +21,7 @@ a:hover{color:#000}
 .post .body em{font-size:13px;font-style:normal;color:#999}
 .post .body img{max-width:100%}
 .post .body code{padding:0 .5em;background-color:#fee8cc;font-family:Menlo,Monaco,"Courier New",monospace}
-.post .body pre{padding:1em 0;border:1px solid #eee;font-size:14px}.post .body pre code{padding:0;background-color:tranparent}
+.post .body pre{padding:1em 0;border:1px solid #eee;font-size:14px}.post .body pre code{padding:0;background-color:transparent}
 .post .footer{margin-top:1em;padding:1em .8em;border-radius:2px;border:1px solid #e5e5e5;font-family:"Roboto Slab",serif;font-weight:400;color:#84cad9}.post .footer .publisher{font-size:12px}
 .post .post-tags{padding-top:.5em}.post .post-tags li{display:inline;list-style:none}
 .post .post-tags a{padding:3px 16px;border-radius:16px;border:1px solid #84cad9;white-space:nowrap}
