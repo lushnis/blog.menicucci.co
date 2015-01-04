@@ -89,7 +89,7 @@
 
                 <ul class="posts-list">
                     {% for post in items %}
-                    {% if loop.index > 0 and loop.index <= 20 %}
+                    {% if loop.index > 0 and loop.index <= 10 %}
                     <li>
                         <article itemscope itemtype="http://schema.org/Article">
                             <time datetime="{{ post.created_at }}">{{ post.created_at.strftime('%d %b') }}</time><a href="{{ post.permalink }}" class="permalink">{{ post.title }}</a>
