@@ -88,10 +88,7 @@
                 {% if is_tag %}
                 <header>
                     <h2 class="title">#{{ tag }}:</h2>
-                </header><div class="pagination">
-          {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %}
-          {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}
-        </div>
+                </header>
                 {% endif %}
  
                 {% if posts %}
@@ -113,16 +110,14 @@
                     {% endfor %}
                 </ul>
                 {% endfor %}
-                 
-        <div class="pagination">
-          {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %}
-          {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}
-        </div>
-        
                 {% else %}
                 <h2 class="title"><em>No posts yet :(</em></h2>
                 {% endif %}
-
+{% if pages %}
+                {% for page in pages %}
+                <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
+                {% endfor %}
+                {% endif %}
                 {% if is_tag %}
                 {% if site.tags %}
                 <div class="tags">
