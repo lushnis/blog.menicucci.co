@@ -177,7 +177,12 @@
                 <article class="post">
                     <section class="content">
                         <h1>{{ post.title }}</h1>
-                        <div class="body">{{ post.content }}</div>
+                        <div class="body">
+                            {{ post.content }}
+                            <hr>
+                            {{ link.content }}
+                            <p class="source"><a href="{{ link.url }}">{{ link.url }}</a></p>
+                        </div>
                         <div class="footer" class="muted">
                             <p class="publisher">Published on <time class="time" datetime="{{ post.created_at }}">{{ post.created_at|date_format }}</time></p>
                             {% if post.tags %}
@@ -188,13 +193,6 @@
                             </ul>
                             {% endif %}
                         </div>
-                    </section>
-                    
-                    <section class="content">
-                        <h1>{{ link.title }}</h1>
-                        <p class="muted">Published by {{ site.author }} on {{ link.created_at|date_format }}</p>
-                        {{ link.content }}
-                        <span class="link-url"><i class="icon-share"></i> <a href="{{ link.url }}">{{ link.url }}</a></span>
                     </section>
  
                     {% if site.disqus %}
