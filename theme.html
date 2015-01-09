@@ -179,7 +179,7 @@
                         <h1>{{ post.title }}</h1>
                         <div class="body">
                             {{ link.content }}
-                            <p class="source">/ {{ link.author }} <a href="{{ link.url }}">{{ link.url }}</a></p>
+                            <p class="source">/ {{ post.author }} <a href="{{ link.url }}">{{ link.url }}</a></p>
                         </div>
                         <div class="footer" class="muted">
                             <p class="publisher">Published on <time class="time" datetime="{{ post.created_at }}">{{ post.created_at|date_format }}</time></p>
